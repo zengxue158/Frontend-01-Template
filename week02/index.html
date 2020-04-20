@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>直接量 可以直接拿来使用的量。Number数值类型的直接量:数值类型就单纯的是一个数值，但是注意NaN它不是一个数字但它也是Number类型中的一个值。然后数值中的极值无穷大和无穷小，分别用infinity和-infinity来表示一般会用于做比较。</h2>
+    
+    <script>
+        // 1.写一个正则表达式 匹配所有 Number 直接量
+        // 数字 + NaN +（+/-）infinity
+        function validate(value){  
+            var reg = new RegExp(/\d|NaN|(\+i|\-i|i)nfinity/g);  
+            if(!reg.test(obj.value)){  
+                alert("请输入数字!");  
+            }
+        } 
+        // 2.写一个 UTF-8 Encoding 的函数 
+        // 方法1:
+        function utf8Encoding1(str) {
+            return str.split('').map((s) => `\\u${s.charCodeAt().toString(16)}`).join('');
+        }
+        // 方法2:
+        function UTF8Encoding2(pValue){
+            return pValue.replace(/[^\u0000-\u00FF]/g, function($0){ 
+                // console.log($0); 
+                return escape($0).replace(/(%u)(\w{4})/gi,"$2;")
+            });
+        }
+        // 3.写一个正则表达式，匹配所有的字符串直接量，单引号和双引号
+        function strings(val){
+            // Unicode
+            // /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[\u0021-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007E])[\u0021-\u007E]{6,16}$/
+
+            // ASCII
+            // /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[\x21-\x2F\x3A-\x40\x5B-\x60\x7B-\x7E])[\x21-\x7E]{6,16}$/
+            
+            // 单双引号
+            // /(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*/
+
+            // Unicode+ASCII+单双引号
+            var reg = /(^(?=.*[a-zA-Z])(?=.*\d)(?=.*[\u0021-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007E])[\u0021-\u007E]{6,16}$)|(^(?=.*[a-zA-Z])(?=.*\d)(?=.*[\x21-\x2F\x3A-\x40\x5B-\x60\x7B-\x7E])[\x21-\x7E]{6,16}$)|((?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*)/
+            
+            return reg.test(val);
+        }
+
+    </script>
+</body>
+</html>
