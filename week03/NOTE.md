@@ -103,30 +103,30 @@ new Error([message[, fileName[,lineNumber]]])
 
 javascript中的原生对象是无法用纯javascript代码实现的。
 比如：
-基本类型:
+### 基本类型:
 - Object
 - Function
 - Boolean
 - Symbol
-基本功能和数据结构:
+### 基本功能和数据结构:
 - Array
 - Data
 - RegExp
 - Promise
 - Proxy
 - Function
-错误类型:
+### 错误类型:
 - AggregateError
 - EvalError
 - RangeError
 - ReferenceError
 - SyntaxError
 - TypeError
-二进制操作:
+### 二进制操作:
 - ArrayBuffe
 - sharedArrayBuffer
 - DataView 
-带类型的数组:
+### 带类型的数组:
 - Float32Array
 - Float64Array
 - Int8Array
