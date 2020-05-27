@@ -1,6 +1,6 @@
 # 重学浏览器工作原理
 ## 重学浏览器工作原理
-![浏览器工作原理]( "http://cms-bucket.ws.126.net/2020/0527/08f9aa96p00qazq9h001pc000nt002gc.png")
+![浏览器工作原理](http://cms-bucket.ws.126.net/2020/0527/08f9aa96p00qazq9h001pc000nt002gc.png)
 ## 网络模型
 ## TCP/IP
 ## HTTP
@@ -22,12 +22,12 @@
     - specificity 是个四元组，越左边权重越高
     - 一个 CSS 规则的 specificity 根据包含的简单选择器相加而成
 ### DOM layout && render
-![DOM layout && render]('http://cms-bucket.ws.126.net/2020/0527/55658ddcp00qazqha000yc000ii008gc.png')
+![DOM layout && render](http://cms-bucket.ws.126.net/2020/0527/55658ddcp00qazqha000yc000ii008gc.png)
 - 收集元素
-![收集元素]('http://cms-bucket.ws.126.net/2020/0527/d4fb87edp00qazqj60008c0009v006xc.png')
+![收集元素](http://cms-bucket.ws.126.net/2020/0527/d4fb87edp00qazqj60008c0009v006xc.png)
 - 计算主轴
-![计算主轴]('http://cms-bucket.ws.126.net/2020/0527/96abbbb8p00qazqkn0008c0009i006lc.png')
+![计算主轴](http://cms-bucket.ws.126.net/2020/0527/96abbbb8p00qazqkn0008c0009i006lc.png)
 - 计算交叉值
-![计算交叉值]('http://cms-bucket.ws.126.net/2020/0527/5af7facdp00qazqlq0008c0009b006yc.png')
+![计算交叉值](http://cms-bucket.ws.126.net/2020/0527/5af7facdp00qazqlq0008c0009b006yc.png)
 - 重绘和重排
-![重绘和重排]('http://cms-bucket.ws.126.net/2020/0527/3126bf7bp00qazqn3002tc000zj00h3c.png')
+![重绘和重排](http://cms-bucket.ws.126.net/2020/0527/3126bf7bp00qazqn3002tc000zj00h3c.png)
